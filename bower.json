@@ -1,0 +1,17 @@
+{
+  "name": "helper",
+  "version": "1.0.0",
+  "description": "markup",
+  "main": "index.js",
+  "authors": [
+    "DavidHalkin"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^4.2.1",
+    "air-datepicker": "^2.2.3"
+  },
+  "devDependencies": {}
+}

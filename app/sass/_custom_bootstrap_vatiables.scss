@@ -1,0 +1,26 @@
+$theme-colors: (
+   "light": #cfd6de,
+   "primary": #1571ae,
+   "success": #38c173,
+   "danger": #e46463,
+   "warning": #caa53d,
+   "gray": #f8f9fb,
+   "dark_gray": #cfd6de,
+);
+
+$input-focus-box-shadow: none;
+
+$btn-box-shadow: none;
+$btn-focus-box-shadow: none !important;
+
+$body-color: #8895a6;
+$btn-border-radius: 9px;
+$input-border-radius: 9px;
+
+$link-color:#1571ae;
+$link-hover-color: $link-color;
+
+$rounded-pill: 9px;
+
+
+// $font-size-base: 1.4rem;
