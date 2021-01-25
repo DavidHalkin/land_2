@@ -3,3 +3,17 @@
 	'../../bower_components/bootstrap/scss/_functions.scss',
 	'../../bower_components/bootstrap/scss/_variables.scss',
 	'../../bower_components/bootstrap/scss/_mixins.scss';
+body{
+	font:14px/1.15 Verdana, Geneva, sans-serif;
+	color: rgb(59, 59, 59);
+}
+.center_block{
+	max-width: 1160px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 24px;
+	@include media-breakpoint-down(sm) {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}

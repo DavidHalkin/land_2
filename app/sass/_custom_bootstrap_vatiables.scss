@@ -1,11 +1,5 @@
 $theme-colors: (
-   "light": #cfd6de,
-   "primary": #1571ae,
-   "success": #38c173,
-   "danger": #e46463,
-   "warning": #caa53d,
-   "gray": #f8f9fb,
-   "dark_gray": #cfd6de,
+   "danger": #f44a26,
 );
 
 $input-focus-box-shadow: none;
@@ -14,13 +8,16 @@ $btn-box-shadow: none;
 $btn-focus-box-shadow: none !important;
 
 $body-color: #8895a6;
-$btn-border-radius: 9px;
-$input-border-radius: 9px;
+
+$btn-border-radius: 4px;
+$input-border-radius: 4px;
+$input-border-color:#e8e8e8;
+$input-focus-border-color:#001e62;
 
 $link-color:#1571ae;
 $link-hover-color: $link-color;
 
-$rounded-pill: 9px;
+$rounded-pill: 4px;
 
 
 // $font-size-base: 1.4rem;

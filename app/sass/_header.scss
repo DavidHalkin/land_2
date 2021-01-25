@@ -1,0 +1,85 @@
+.header{
+	.logo{
+		max-width: 175px;
+		flex: 0 0 175px;
+		overflow: hidden;
+		@include media-breakpoint-down(sm) {
+			max-width: 109px;
+			flex:0 0 109px;
+		}
+	}
+}
+.header_top{
+	padding-top: 14px;
+	@include media-breakpoint-down(sm) {
+		box-shadow: inset 0 -1px 0 0 #e8e8e8;
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+}
+.etc_nav{
+	font-size: 11px;
+	line-height: 40px;
+	a{
+		color: gray;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	.active{
+		a{
+			font-weight: 600;
+		}
+	}
+}
+.etc_link{
+	font-size: 14px;
+	line-height: 40px;
+	a{
+		color: grey;
+		position: relative;
+		font-weight: bold;
+		&:hover{
+			text-decoration: none;
+		}
+		&:before{
+			content: "";
+			background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNLTItMWgxOXYxOUgtMnoiLz48cGF0aCBzdHJva2U9IiNGRjVDMzkiIHN0cm9rZS13aWR0aD0iMS42MzIiIGQ9Ik02LjcwOCAyLjk1OGgzLjk1OW0yLjM3NSAwYS43OS43OSAwIDAxLjc5MS43OTN2MTEuMDgyYS43OS43OSAwIDAxLS43OTIuNzkySDEuOTU5YS43OS43OSAwIDAxLS43OTItLjc5MlYzLjc1YzAtLjQzOC4zNS0uNzkzLjc5OS0uNzkzaDIuMzY3Ii8+PHBhdGggZmlsbD0iI0ZGNUMzOSIgZD0iTTMuNTQyIDguNWgxLjU4M3YxLjU4M0gzLjU0MnptMy4xNjYgMGgxLjU4M3YxLjU4M0g2LjcwOHptMCAzLjE2N2gxLjU4M3YxLjU4M0g2LjcwOHpNOS44NzUgOC41aDEuNTgzdjEuNTgzSDkuODc1em0tNi4zMzMgMy4xNjdoMS41ODN2MS41ODNIMy41NDJ6bTAtMTEuMDg0aDEuNTgzdjQuNzVIMy41NDJ6bTYuMzMzIDBoMS41ODN2NC43NUg5Ljg3NXoiLz48L2c+PC9zdmc+);
+			background-repeat: no-repeat;
+			display: inline-block;
+			height: 16px;
+			width: 16px;
+			margin: 0 6px -2px 0;
+		}
+	}
+}
+.header_bottom{
+	@include media-breakpoint-down(sm) {
+		height: 32px;
+		overflow: hidden;
+	}
+}
+.main_nav{
+	// margin-top: 6px;
+	margin-bottom: 10px;
+	padding-left: 7px;
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 0;
+		overflow: auto;
+	}
+	li{
+		padding-right: 20px;
+		> a{
+			text-transform: uppercase;
+			color: grey;
+			font-size: 11px;
+			line-height: 32px;
+			white-space: nowrap;
+			// font-weight: 600;
+			&:hover{
+				text-decoration: none;
+				color:theme-color("danger");
+			}
+		}
+	}
+}

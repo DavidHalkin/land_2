@@ -7,3 +7,104 @@
 '_icons.scss',
 'footer',
 'header';
+.hero_bammer{
+	min-height: 390px;
+	position: relative;
+	.center_block{
+		padding-top: 45px;
+	}
+	.tab_info{
+		max-width: 361px;
+		flex:0 0 361px;
+	}
+	h1{
+		padding-left: 40px;
+		font-size: 32px;
+		line-height: 34px;
+		font-weight: bold;
+		span{
+			display: block;
+			&:nth-child(2){
+				padding-left: 70px;
+			}
+			&:nth-child(3){
+				padding-left: 35px;
+			}
+		}
+	}
+}
+.custom_field{
+	position: relative;
+	svg{
+		position: absolute;
+		top: 50%;
+		transform:translateY(-50%);
+		left: 8px;
+	}
+	.form-control{
+		padding-left: 48px;
+	}
+}
+.img_decor{
+	position: absolute;
+	top: 0;
+	right: 0;
+	overflow: hidden;
+}
+.hero_info{
+	position: relative;
+	z-index: 1;
+}
+.tab_info{
+	margin-left: 4px;
+	position: relative;
+	.input_height{
+		min-height: 200px
+	}
+	ul{
+		padding-bottom: 10px;
+		li{
+			a{
+				color: #4d4d4d;
+				font-size: 14px;
+				line-height: 16px;
+				font-weight: 600;
+				padding-top: 0;
+				span{
+					display: block;
+				}
+				.ic{
+					display: inline-block;
+					width: 24px;
+					height: 24px;
+					margin-top: 15px;
+					&.ic_behandlungen{
+						background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMCAwaDI0djI0SDB6Ii8+PGNpcmNsZSBjeD0iNSIgY3k9IjEzIiByPSIyIiBzdHJva2U9IiM0ZDRkNGQiIHN0cm9rZS13aWR0aD0iMiIvPjxjaXJjbGUgY3g9IjExIiBjeT0iMTkiIHI9IjIiIHN0cm9rZT0iIzRkNGQ0ZCIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggc3Ryb2tlPSIjNGQ0ZDRkIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik01IDE1YzIgMCA2LTIgNi0ybDEwLTVtLTEwIDVsNS0xMCIvPjwvZz48L3N2Zz4=");
+					}
+					&.ic_salonname{
+						background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggc3Ryb2tlPSIjNGQ0ZDRkIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0xOSAxNHY2YTEgMSAwIDAxLTEgMUg2YTEgMSAwIDAxLTEtMXYtOSIvPjxyZWN0IHdpZHRoPSI0IiBoZWlnaHQ9IjYiIHg9IjkiIHk9IjE1IiBzdHJva2U9IiM0ZDRkNGQiIHN0cm9rZS13aWR0aD0iMiIgcng9Ii41Ii8+PHBhdGggc3Ryb2tlPSIjNGQ0ZDRkIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0yMC45MDMgOC40MTdjLjA2My4xODQuMDk3LjM4LjA5Ny41ODMgMCAxLjEwNS0xLjAwNyAyLTIuMjUgMmEyLjM3NCAyLjM3NCAwIDAxLTEuNjg4LS42NzcgMi4zNzQgMi4zNzQgMCAwMS0xLjY4Ny42NzcgMi4zNzQgMi4zNzQgMCAwMS0xLjY4OC0uNjc3QTIuMzc0IDIuMzc0IDAgMDExMiAxMWEyLjM3NCAyLjM3NCAwIDAxLTEuNjg4LS42NzdBMi4zNzQgMi4zNzQgMCAwMTguNjI2IDExYTIuMzc0IDIuMzc0IDAgMDEtMS42ODgtLjY3N0EyLjM3NCAyLjM3NCAwIDAxNS4yNSAxMUM0LjAwNyAxMSAzIDEwLjEwNSAzIDljMC0uMjAzLjAzNC0uMzk5LjA5Ny0uNTgzbC43MzgtNC40MjZDMy45MjYgMy40NDQgNC40NDUgMyA1IDNoMTMuOTk4Yy41NTMgMCAxLjA3Ni40NTEgMS4xNjYuOTlsLjczOCA0LjQyN3oiLz48L2c+PC9zdmc+");
+					}
+				}
+				&.active{
+					color:theme-color("danger");
+					// position: relative;
+					// &:after{
+					// 	content: "";
+					// 	position: absolute;
+					// 	bottom: 0;
+					// 	left: 0;
+					// 	width: 100%;
+					// 	height: 2px;
+					// 	background:theme-color("danger");
+					// }
+					.ic_behandlungen{
+						background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMCAwaDI0djI0SDB6Ii8+PGNpcmNsZSBjeD0iNSIgY3k9IjEzIiByPSIyIiBzdHJva2U9IiNmZjVjMzkiIHN0cm9rZS13aWR0aD0iMiIvPjxjaXJjbGUgY3g9IjExIiBjeT0iMTkiIHI9IjIiIHN0cm9rZT0iI2ZmNWMzOSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggc3Ryb2tlPSIjZmY1YzM5IiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik01IDE1YzIgMCA2LTIgNi0ybDEwLTVtLTEwIDVsNS0xMCIvPjwvZz48L3N2Zz4=");
+					}
+					.ic_salonname{
+						background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggc3Ryb2tlPSIjZmY1YzM5IiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0xOSAxNHY2YTEgMSAwIDAxLTEgMUg2YTEgMSAwIDAxLTEtMXYtOSIvPjxyZWN0IHdpZHRoPSI0IiBoZWlnaHQ9IjYiIHg9IjkiIHk9IjE1IiBzdHJva2U9IiNmZjVjMzkiIHN0cm9rZS13aWR0aD0iMiIgcng9Ii41Ii8+PHBhdGggc3Ryb2tlPSIjZmY1YzM5IiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0yMC45MDMgOC40MTdjLjA2My4xODQuMDk3LjM4LjA5Ny41ODMgMCAxLjEwNS0xLjAwNyAyLTIuMjUgMmEyLjM3NCAyLjM3NCAwIDAxLTEuNjg4LS42NzcgMi4zNzQgMi4zNzQgMCAwMS0xLjY4Ny42NzcgMi4zNzQgMi4zNzQgMCAwMS0xLjY4OC0uNjc3QTIuMzc0IDIuMzc0IDAgMDExMiAxMWEyLjM3NCAyLjM3NCAwIDAxLTEuNjg4LS42NzdBMi4zNzQgMi4zNzQgMCAwMTguNjI2IDExYTIuMzc0IDIuMzc0IDAgMDEtMS42ODgtLjY3N0EyLjM3NCAyLjM3NCAwIDAxNS4yNSAxMUM0LjAwNyAxMSAzIDEwLjEwNSAzIDljMC0uMjAzLjAzNC0uMzk5LjA5Ny0uNTgzbC43MzgtNC40MjZDMy45MjYgMy40NDQgNC40NDUgMyA1IDNoMTMuOTk4Yy41NTMgMCAxLjA3Ni40NTEgMS4xNjYuOTlsLjczOCA0LjQyN3oiLz48L2c+PC9zdmc+");
+					}
+				}
+			}
+		}
+	}
+}
