@@ -29,6 +29,7 @@
 	.active{
 		a{
 			font-weight: 600;
+			color: theme-color("danger");
 		}
 	}
 }
@@ -57,6 +58,13 @@
 	@include media-breakpoint-down(sm) {
 		height: 32px;
 		overflow: hidden;
+		margin-left: -16px;
+		margin-right: -16px;
+		
+		ul{
+			padding-left: 16px;
+			padding-right: 16px;
+		}
 	}
 }
 .main_nav{
