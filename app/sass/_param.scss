@@ -53,3 +53,26 @@ body{
 		font-size: 14px;
 	}
 }
+.fz_14{
+	font-size: 14px !important;
+}
+.modal_dialog_cstm{
+	max-width: 600px;
+	.modal-body{
+		padding: 50px 70px;
+		@include media-breakpoint-down(sm) {
+			padding: 50px 24px;
+		}
+		p{
+			font-size: 16px;
+			line-height: 24px;
+			color: #4d4d4d !important;
+			margin-bottom: 20px;
+			a{
+				color: #001e62;
+				text-decoration: underline;
+				font-weight: bold;
+			}
+		}
+	}
+}
