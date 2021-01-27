@@ -1,0 +1,84 @@
+.footer{
+	background:#ff5c39 url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTY5NiIgaGVpZ2h0PSI3OTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNOTI3Ljk1MiA1OTIuNjY1Yy0zNS42NTYuNzUtNjcuMzkgMi4wMDQtNzcuNzU1IDMuODItMjcuMjkyIDQuNzg0LTYzLjkwMiAxNy42NjctODQuMTE2IDI3LjQwMi0yMy45NzggMTEuNTQ4LTUwLjkxMiAyNy4yMjYtNzQuMTIgNDIuODI5LTM4LjcyIDI2LjAzMi03NC4xNjUgNTQuMTA1LTExMC42OCA4MS40OTUtMTguNzY3IDE0LjA3OC0zNy44ODcgMzEuNjEtNTcuODMyIDQ0Ljk3Mmg0NzEuNzE2Yy0yMC4xMTQtNTkuNzgyLTQ3LjU5Ny0xNDIuMzUxLTY3LjIxMy0yMDAuNTE4IiBmaWxsPSIjRDZDRjhEIi8+PHBhdGggZD0iTTE0MTEuMzk0IDQwOC4wMDZjLTkyLjM0LTExNS43NzYtMTYzLjE3Mi0yMTYuMDQ1LTMwOS44OTItMzQ0LjA3MUMxMDY0LjUgMzEuNjQ3IDEwMDUuMjEyLTQuOCA5MDMuMjQ0IDEuMTA4Yy03Mi4zMDYgNC4xOS0xNDYuMDUgODcuMDY1LTE0Ni4wNSA4Ny4wNjUtMzYuNDI1IDM4Ljg4Ny03Ny44OCA4NC41OS0xMTAuOTE0IDEyMi42NjctNTQuNTYxIDYyLjg4OC0yODguMzY2IDI3OS4zOTUtMzg4LjQxIDM2OC4yNTRDMTk1LjExNyA2MzQuODMgNzYuNjMgNzM1LjM5NC0uNzQzIDc5My4xODNIMzAyLjI0YzEwNC4yODQtNzYuNjc4IDI3OC4yOC0xMzAuMTAxIDM3Ni45ODgtMjAxLjk3IDEwOC42OTItNzkuMTM2IDE0MC4wOS0xMzcuODM4IDE3My42MDYtMTM3LjM5IDI4LjMwOC4zNzggMzYuNDM2IDMzLjUxIDUxLjM2MyA3MC4xMDggMi41MTggNi4xNzQgMTEuNjM0IDMyLjc5NiAyMy43NTQgNjguNzM0IDE5LjYxNiA1OC4xNjcgNDcuMDk5IDE0MC43MzYgNjcuMjEzIDIwMC41MThoNzAxLjA2NmMtODAuMDktMTA4Ljc2NS0yNjQuMzc3LTM1OS41MjQtMjg0LjgzNy0zODUuMTc3IiBmaWxsPSIjRkY4MDhCIi8+PC9nPjwvc3ZnPg==);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 32px;
+	h3{
+		font-size: 14px;
+		line-height: 1;
+		margin-bottom: 20px;
+		font-weight: bold;
+		@include media-breakpoint-up(lg) {
+			font-size: 18px;
+			font-weight: normal;
+		}
+	}
+	.center_block{
+		@include media-breakpoint-down(md) {
+			max-width: 448px;
+			// margin-right: auto;
+			// margin-left: auto;
+		}
+	}
+}
+.footer_top{
+	ul{
+		li{
+			padding-bottom: 12px;
+			a{
+				color: #fff;
+				font-size: 12px;
+				line-height: 20px;
+				@include media-breakpoint-up(lg) {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	
+}
+.footer_bottom{
+	border-top: 1px solid #fff;
+	margin-top: 20px;
+	padding: 40px 0  16px;
+	@include media-breakpoint-down(md) {
+		padding-top: 16px;
+	}
+}
+.ico_f{
+	height: 22px;
+	width: 13px;
+	display: block;
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEwLjYxMyAzLjQ5OWgtLjM0NWMtLjE3LS4wNTEtLjQzNi0uMTE2LS43OTgtLjE5OGE0LjczNSA0LjczNSAwIDAwLTEuMDI4LS4xMjJjLS45MDMgMC0xLjUxOS4xNjctMS44NDUuNS0uMzI4LjMzMi0uNDkyLjk1My0uNDkyIDEuODYzdi4xMTZoMy41NXYzLjExNkg2LjI1OVYyMGgtNC40N1Y4Ljc3NEgwVjUuNjU4aDEuNzg4di0uMzk2YzAtMS43NTUuNDYtMy4wNyAxLjM3OS0zLjk0N0M0LjA4Ny40NCA1LjQ3OCAwIDcuMzQzIDBjLjY0NyAwIDEuMjUyLjAyNCAxLjgxNC4wNy41NjMuMDQ3IDEuMDQ3LjEwOSAxLjQ1Ni4xODVWMy41eiIgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	&:hover{
+		background-size: 13px 22px;
+	}
+}
+.ico_inst{
+	height: 22px;
+	width: 22px;
+	display: block;
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTEuOTU4IDEwLjIyOGMwLTEuMDc1LS44NzQtMS45NS0xLjk1LTEuOTUtMS4wNzUgMC0xLjk1Ljg3NS0xLjk1IDEuOTVzLjg3NSAxLjk1IDEuOTUgMS45NWMxLjA3NiAwIDEuOTUtLjg3NSAxLjk1LTEuOTVNMTQuMDYyIDMuMDgyYzAtLjMwMi4yNDctLjU1LjU1LS41NWgxLjY5N2MuMzAzIDAgLjU1LjI0OC41NS41NVY0Ljc4YzAgLjMwMi0uMjQ3LjU1LS41NS41NWgtMS42OTdhLjU1MS41NTEgMCAwMS0uNTUtLjU1VjMuMDgyek0xMC4wMDggNS41M2MxLjAxMyAwIDEuOTUuMzIzIDIuNzE5Ljg3SDE5LjgwMlY1LjAyMkE0Ljk1MSA0Ljk1MSAwIDAwMTQuODU2LjA3Nkg0Ljk1N0E0Ljk1MiA0Ljk1MiAwIDAwLjAxMSA1LjAyMlY2LjRINy4yOWE0LjY3MSA0LjY3MSAwIDAxMi43Mi0uODd6Ii8+PHBhdGggZD0iTTE0LjcwNiAxMC4yMjhhNC43MDMgNC43MDMgMCAwMS00LjY5OCA0LjY5OCA0LjcwMyA0LjcwMyAwIDAxLTQuNjk4LTQuNjk4YzAtLjcxMy4xNi0xLjM5LjQ0Ni0xLjk5NkguMDEydjYuNzdhNC45NTEgNC45NTEgMCAwMDQuOTQ1IDQuOTQ2aDkuODk5YTQuOTUxIDQuOTUxIDAgMDA0Ljk0Ni00Ljk0NnYtNi43N0gxNC4yNmMuMjg1LjYwNi40NDYgMS4yODMuNDQ2IDEuOTk2Ii8+PC9nPjwvc3ZnPg==);
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	&:hover{
+		background-size: 22px 22px;
+	}
+}
+.footer_bottom{
+	li{
+		margin-right: 10px;
+		padding-bottom: 20px;
+	}
+}
+.copy{
+	display: block;
+	color: #000;
+	opacity: .4;
+	font-size: 12px;
+	line-height: 16px;
+}
