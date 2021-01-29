@@ -41,6 +41,9 @@ body{
 	height: 12px;
 	background: #ff5c39;
 }
+.bdw_2{
+	border-width: 2px;
+}
 .btn-lg{
 	// &.btn-secondary,&.btn-danger{
 		
@@ -73,6 +76,31 @@ body{
 				text-decoration: underline;
 				font-weight: bold;
 			}
+		}
+	}
+}
+.btn_switch_map{
+	padding: 5px 16px;
+	span{
+		padding-left: 8px;
+		font-size: 14px;
+		line-height: 24px;
+	}
+}
+.btn_filter{
+	font-size: 14px;
+	line-height: 24px;
+	&:hover,&:active,&:focus{
+		background: none !important;
+		color: theme-color("secondary") !important;
+	}
+	&.active{
+		svg{
+			fill:#fff;
+		}
+		&:hover,&:active,&:focus{
+			background: theme-color("secondary") !important;
+			color: #fff !important;
 		}
 	}
 }

@@ -17,6 +17,8 @@ body { font: 14px/1.15 Verdana, Geneva, sans-serif; color: #3b3b3b; }
 
 .owl-theme .owl-dots .owl-dot.active span { width: 12px; height: 12px; background: #ff5c39; }
 
+.bdw_2 { border-width: 2px; }
+
 .btn-lg { font-size: 16px; line-height: 1.9; padding-left: 12px; padding-right: 12px; }
 
 @media (max-width: 575.98px) { .btn-lg { font-size: 14px; } }
@@ -32,6 +34,18 @@ body { font: 14px/1.15 Verdana, Geneva, sans-serif; color: #3b3b3b; }
 .modal_dialog_cstm .modal-body p { font-size: 16px; line-height: 24px; color: #4d4d4d !important; margin-bottom: 20px; }
 
 .modal_dialog_cstm .modal-body p a { color: #001e62; text-decoration: underline; font-weight: bold; }
+
+.btn_switch_map { padding: 5px 16px; }
+
+.btn_switch_map span { padding-left: 8px; font-size: 14px; line-height: 24px; }
+
+.btn_filter { font-size: 14px; line-height: 24px; }
+
+.btn_filter:hover, .btn_filter:active, .btn_filter:focus { background: none !important; color: #001e62 !important; }
+
+.btn_filter.active svg { fill: #fff; }
+
+.btn_filter.active:hover, .btn_filter.active:active, .btn_filter.active:focus { background: #001e62 !important; color: #fff !important; }
 
 @font-face { font-family: "Icons"; src: url("../fonts/icons_custom/Icons.eot"); src: url("../fonts/icons_custom/Icons.eot?#iefix") format("eot"), url("../fonts/icons_custom/Icons.woff2") format("woff2"), url("../fonts/icons_custom/Icons.woff") format("woff"), url("../fonts/icons_custom/Icons.ttf") format("truetype"), url("../fonts/icons_custom/Icons.svg#Icons") format("svg"); }
 
@@ -381,5 +395,51 @@ body { font: 14px/1.15 Verdana, Geneva, sans-serif; color: #3b3b3b; }
 .ico_check { width: 24px; height: 24px; display: inline-block; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath fill='%23FFF' fill-rule='evenodd' d='M9 16.586L20.293 5.293l1.414 1.414L9 19.414l-6.707-6.707 1.414-1.414z'/%3E%3C/svg%3E"); }
 
 .modal_footer_btn .btn { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100%; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; text-align: center; }
+
+.total_search { height: 51px; background: #fff; -webkit-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15), 0 0 1px 0 rgba(0, 0, 0, 0.4); box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15), 0 0 1px 0 rgba(0, 0, 0, 0.4); max-width: 360px; -webkit-box-flex: 0; -webkit-flex: 0 0 360px; -ms-flex: 0 0 360px; flex: 0 0 360px; padding: 8px; cursor: pointer; margin-right: 16px; }
+
+.total_search .total_search_ico { max-width: 24px; -webkit-box-flex: 0; -webkit-flex: 0 0 24px; -ms-flex: 0 0 24px; flex: 0 0 24px; }
+
+.total_search .total_search_info { overflow: hidden; -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-flex-basis: 0; -ms-flex-preferred-size: 0; flex-basis: 0; width: 100%; max-width: 100%; }
+
+.total_search .tsi_title { font-size: 14px; line-height: 20px; color: #4d4d4d; }
+
+.total_search .tsi_info { font-size: 12px; line-height: 16px; color: gray; height: 16px; width: 100%; }
+
+.total_search .tsi_dot { margin: 0 6px; }
+
+.slide_bar { background: #001e62 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnICAgeG1sbnM6eGxpbms9J2h0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsnIHdpZHRoPScxNDQzJyBoZWlnaHQ9JzUwNicgdmlld0JveD0nMCAwIDE0NDMgNTA2Jz4gIDxkZWZzPiAgICA8cGF0aCBpZD0nYScgZD0nTTAgMGgxNDQwdjUwMEgweicvPiAgPC9kZWZzPiAgPGcgZmlsbD0nbm9uZScgZmlsbC1ydWxlPSdldmVub2RkJz4gICAgPG1hc2sgaWQ9J2MnIGZpbGw9JyNmZmYnPiAgICAgIDx1c2UgeGxpbms6aHJlZj0nI2EnLz4gICAgPC9tYXNrPiAgICA8dXNlIGZpbGw9JyMwMDFFNjInIHhsaW5rOmhyZWY9JyNhJy8+ICAgIDxnIG1hc2s9J3VybCgjYyknPiAgICAgIDxwYXRoIGZpbGw9JyNGRjgwOEInIGQ9J00wIDU2NC43MzZoMTI2NlYtMzg0SDB6Jy8+ICAgICAgPHBhdGggZmlsbD0nIzAwMUU2MicgZD0nTTEwMjguMDE0LTM4NGMuNjM3IDguODU3LTkuOTU3IDE0My4xNTQtNzMuMTM4IDMwNi43MTZDODc3LjA0OCAxMjQuMTk0IDc4NC4yNzQgMzkzLjI3IDc2OC4xMTUgNTY1SDEyNjh2LTk0OWgtMjM5Ljk4NicvPiAgICAgIDxwYXRoIGZpbGw9JyNGRjVDMzknIGQ9J002My44MDktMjQyLjAwNUM1Mi4zNTktMjIxLjYzOSAyNi42NjYtMTg5LjA3OSAwLTE1Ni41MXY0ODUuODQ3YzcyLjMxMyAzNy42NTIgMTk0LjEzNCA3Ny4yNCAzNjIuNDAyIDYwLjg2MyA4MC42MjQtNy44NDUgMjQ4Ljc2NS00OS4zMjggMzQzLjYxMS0yNzguNTY4Qzc2Ny41MTYtMzcuMDQgODIzLjUyNS0zNzIuNjg1IDgyNC0zODRIOTkuMjQ0YzQuOTY1IDI0LjUwOC0xMS42NTIgOTkuNjgxLTM1LjQzNSAxNDEuOTk1Jy8+ICAgIDwvZz4gIDwvZz48L3N2Zz4="); background-position: 0 0; background-repeat: no-repeat; position: -webkit-sticky; position: sticky; top: 0; left: 0; z-index: 10; }
+
+.slide_bar h3 { font-weight: bold; color: #fff; font-size: 24px; line-height: 27px; }
+
+.filter_block .name_result { font-size: 14px; line-height: 20px; color: gray; font-weight: normal; }
+
+@media (min-width: 576px) { .col_img_fix { max-width: 300px; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; } }
+
+.item_result { -webkit-border-radius: 4px; border-radius: 4px; border: 1px solid #e0e0e0; margin-bottom: 32px; }
+
+.item_result:hover { -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
+
+.item_result_top_info h2 { color: #3b3b3b; font-size: 20px; line-height: 24px; font-weight: bold; }
+
+.item_result_top_info h2 a { color: #3b3b3b; text-decoration: none; }
+
+.item_result_top_info p { color: #707070; font-size: 14px; line-height: 16px; }
+
+.item_result_top_img img { -webkit-border-radius: 4px; border-radius: 4px; }
+
+.list_stack { border-top: 1px solid #e0e0e0; margin-top: 12px; }
+
+.list_stack li { padding: 12px 0; border-bottom: 1px solid #e0e0e0; }
+
+.list_stack li:last-of-type { border-bottom: 0; }
+
+.list_stack li .text_info strong, .list_stack li .text_info span { color: #3b3b3b; font-size: 16px; line-height: 24px; font-weight: normal; }
+
+.list_stack li .text_info span { color: #707070; }
+
+.list_stack li .cost_info strong, .list_stack li .cost_info s { font-size: 16px; line-height: 24px; color: #3b3b3b; }
+
+.list_stack li .cost_info s { color: #bebebe; }
 
 /*# sourceMappingURL=all.css.map */

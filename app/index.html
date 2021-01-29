@@ -1,391 +1,74 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="css/custom_bootstrap.css">
-		<link rel="stylesheet" href="css/libs.min.css">
-		<link rel="stylesheet" href="css/all.css">		
 		<title>#</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/all.css" />
+		<style>
+			body,html{
+				height: 100%;
+				margin: 0;
+			}
+			*{
+				 box-sizing: border-box;
+			    -moz-box-sizing: border-box;
+			    -webkit-box-sizing: border-box;
+			}
+			#flex{
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				width: 100%;
+				min-height: 100%;
+				flex-wrap: wrap;
+				border: 2px solid #fff;
+  				flex: 1;
+  				height: 100%;
+			}
+			a{
+				display: block;
+				border: 3px solid #fff;
+				background: orange;
+				color: #fff;
+				font-size: 20px;
+				line-height: 15px;
+				/* width: 25%; */
+				 flex: 1 1 25%;
+				 /*flex: 1;*/
+				justify-content: center;
+  				flex-direction: column;
+  				display: -webkit-flex;
+  				display: -moz-flex;
+  				display: -ms-flex;
+  				display: -o-flex;
+  				display: flex;
+  				text-align: center;
+  				-webkit-transition: all 0.3s ease;
+				-moz-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
+				-ms-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+				color: red;
+				
+			}
+			.red{
+				background: red;
+			}
+			a:hover{
+				opacity: .3;
+			}
+			.new{
+				background: red;color: #fff;
+			}
+		</style>
 	</head>
-	<body>
-		<div class="wrapper">
-			<div class="header center_block">
-				<div class="header_top d-flex align-items-center mx-n3 mx-md-0 px-3 px-md-0">
-					<strong class="logo mr-auto">
-						<a href="#" data-toggle="modal" data-target="#staticBackdrop">
-							<svg class="Logo-module--medium--3cfc65" viewBox="0 0 185 35"><g><path d="M178.812739,1 L172.954238,1.6964651 L172.954238,32.7506146 L178.812739,32.7506146 L178.812739,1 Z M167.710266,1 L161.851765,1.6964651 L161.851765,32.7506146 L167.710266,32.7506146 L167.710266,1 Z M101.750925,29.5960374 C99.0060327,29.5960374 97.3672913,27.7934219 97.3672913,24.8027188 L97.3672913,6.53075223 L96.8756688,6.53075223 L88.0264653,14.6015536 L88.0264653,15.0522075 L91.5087908,15.0522075 L91.5087908,26.5233973 C91.5087908,30.866062 94.1717455,33.1603 97.8179452,33.1603 C100.644774,33.1603 102.857075,31.8083383 104.372911,29.3911948 L104.372911,29.104415 C103.430634,29.4321633 102.611264,29.5960374 101.750925,29.5960374 L101.750925,29.5960374 Z M17.7244592,29.5960374 C15.0205359,29.5960374 13.3817945,27.7934219 13.3817945,24.8027188 L13.3817945,6.53075223 L12.8901721,6.53075223 L4,14.6015536 L4,15.0522075 L7.52329401,15.0522075 L7.52329401,26.5233973 C7.52329401,30.866062 10.1862488,33.1603 13.8324484,33.1603 C16.6183088,33.1603 18.8306097,31.8083383 20.387414,29.3911948 L20.387414,29.104415 C19.4451377,29.4321633 18.5847985,29.5960374 17.7244592,29.5960374 L17.7244592,29.5960374 Z M78.1530484,12.5531269 L78.1530484,32.7506146 L84.0115489,32.7506146 L84.0115489,11.8976303 L78.1530484,12.5531269 Z M30.2608309,11.8976303 L24.4023304,12.5531269 L24.4023304,32.7506146 L30.2608309,32.7506146 L30.2608309,11.8976303 Z M146.529533,23.819474 C147.307935,24.0652852 148.29118,24.2291593 149.274425,24.2291593 C153.780964,24.2291593 157.550069,21.1974878 157.550069,17.5922567 C157.550069,14.4376795 154.559366,11.9385988 150.216701,11.8976303 L150.216701,12.1844101 C151.609632,12.9218437 151.93738,14.6834907 151.93738,16.240295 C151.93738,20.2552115 149.438299,23.286883 146.529533,23.5326943 L146.529533,23.819474 Z M48.2050493,23.819474 C48.9834514,24.0652852 49.9257277,24.2291593 50.9499411,24.2291593 C55.45648,24.2291593 59.1846166,21.1974878 59.1846166,17.5922567 C59.1846166,14.4376795 56.1939136,11.9385988 51.8512489,11.8976303 L51.8512489,12.1844101 C53.2441791,12.9218437 53.5719274,14.6834907 53.5719274,16.240295 C53.5719274,20.2552115 51.0728467,23.286883 48.2050493,23.5326943 L48.2050493,23.819474 Z M149.069582,11.8976303 C143.047208,11.8976303 138.581637,16.4451377 138.581637,22.672355 C138.581637,28.8995723 142.842365,33.1603 148.782803,33.1603 C152.756751,33.1603 155.993265,31.1528418 157.591038,27.5885792 L157.591038,27.2198624 C156.361982,28.3260128 154.313555,28.8995723 152.265128,28.8995723 C147.594715,28.8995723 144.685949,25.9498378 144.685949,20.9926451 C144.685949,17.3464455 146.283722,13.4954032 149.069582,12.1844101 L149.069582,11.8976303 Z M50.7450984,11.8976303 C44.7227238,11.8976303 40.2161849,16.4451377 40.2161849,22.672355 C40.2161849,28.8995723 44.4769126,33.1603 50.4173502,33.1603 C54.4322666,33.1603 57.6687809,31.1528418 59.2255852,27.5885792 L59.2255852,27.2198624 C57.9965291,28.3260128 55.9481024,28.8995723 53.8996756,28.8995723 C49.2702312,28.8995723 46.3204967,25.9088693 46.3204967,20.9926451 C46.3204967,17.3464455 47.9592381,13.4954032 50.7450984,12.1844101 L50.7450984,11.8976303 Z M62.9537219,23.286883 C62.9537219,28.9405409 66.1902361,33.1603 70.9425862,33.1603 C73.7284466,33.1603 75.8178419,31.48059 77.128835,28.8995723 L77.128835,28.6537611 C76.4323699,29.0224779 75.5720306,29.2682892 74.6707229,29.2682892 C71.4751771,29.2273206 69.1399707,26.4414602 69.1399707,22.1807326 C69.1399707,16.6090118 72.5403591,12.8399066 77.0059294,12.8399066 L77.0059294,12.5121583 C76.0636531,12.102473 74.834597,11.8976303 73.5645724,11.8976303 C67.5421978,11.8976303 62.9537219,16.6909489 62.9537219,23.286883 L62.9537219,23.286883 Z M98.80119,15.0522075 L104.495816,15.0522075 L104.495816,12.3073157 L98.80119,12.3073157 L98.80119,15.0522075 Z M14.8156932,15.0522075 L20.5103196,15.0522075 L20.5103196,12.3073157 L14.8156932,12.3073157 L14.8156932,15.0522075 Z M125.225895,12.3073157 L118.916741,12.3073157 L127.397227,33.0373944 L127.806913,33.0373944 L130.96149,26.4414602 L125.225895,12.3073157 Z M113.795674,12.3073157 L107.486519,12.3073157 L115.967006,33.0373944 L116.376692,33.0373944 L119.531269,26.4414602 L113.795674,12.3073157 Z M131.043427,12.3073157 C132.06764,14.3147739 133.009917,18.2477532 133.009917,20.2142429 L133.296696,20.2142429 L137.311613,12.3073157 L131.043427,12.3073157 Z M31.1621387,17.920005 L31.1621387,18.1248476 C32.4321633,16.8138545 34.2347788,16.4451377 35.9964258,16.4451377 C37.1435448,16.4451377 37.7990414,16.6090118 38.3316323,16.854823 L38.3316323,12.102473 C38.0038841,11.9795674 37.5122616,11.8976303 36.8977336,11.8976303 C33.6612193,11.8976303 31.8586038,14.1099312 31.1621387,17.920005 L31.1621387,17.920005 Z" class="Logo-module--medium--3cfc65" fill="#FF5C39"></path></g></svg>
-						</a>
-					</strong>
-					<span class="etc_link d-block d-md-none"><a href="#">Meine Buchungen</a></span>
-					<ul class="etc_nav list-unstyled mb-0  d-none d-md-flex">
-						<li class="text-uppercase pl-3"><a href="#">Ihr Geschäft registrieren</a></li>
-						<li class="text-uppercase pl-3 active"><a href="#">Login</a></li>
-					</ul>
-				</div>
-				<div class="header_bottom">
-					<ul class="main_nav list-unstyled d-flex">
-						<li><a href="#">Coiffeur</a></li>
-						<li><a href="#">Nägel</a></li>
-						<li><a href="#">Haarentfernung</a></li>
-						<li><a href="#">Kosmetik</a></li>
-						<li><a href="#">Massage</a></li>
-						<li><a href="#">Männer</a></li>
-						<li><a href="#">Sale %</a></li>
-						<li><a href="#">Unser Blog</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="hero_bammer" style="background-color: #00B0B9;">
-				<div class="center_block position-relative">
-					<div class="img_decor d-none d-lg-block">
-						<img src="https://picsum.photos/200/300" alt="">
-					</div>
-					<div class="d-flex flex-wrap align-items-center hero_info">
-						<div class="txt_info order-md-last">
-							<h1 class="text-white m-0">
-								<span>Coiffeur & Beauty</span>
-								<span>einfach schöner</span>
-								<span>buchen</span>
-							</h1>
-						</div>
-						<div class="tab_info pb-3 bg-white">
-							<ul class="nav row no-gutters" id="myTab" role="tablist">
-								<li class="nav-item col text-center" role="presentation">
-									<a class="nav-link active" id="behandlungen-tab" data-toggle="tab" href="#behandlungen" role="tab" aria-controls="behandlungen" aria-selected="true">
-										<i class="ic ic_behandlungen"></i>
-										<span>Behandlungen</span>
-									</a>
-								</li>
-								<li class="nav-item col text-center" role="presentation">
-									<a class="nav-link" id="salonname-tab" data-toggle="tab" href="#salonname" role="tab" aria-controls="salonname" aria-selected="false">
-										<i class="ic ic_salonname"></i>
-										<span>Salonname</span>
-									</a>
-								</li>
-							</ul>
-							<div class="tab-content px-3" id="myTabContent">
-								<div class="tab-pane fade show active" id="behandlungen" role="tabpanel" aria-labelledby="behandlungen-tab">
-									<form action="#">
-										<div class="d-flex flex-column input_height">
-											<div class="form-group mb-3">
-												<div class="custom_field">
-													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><circle cx="10" cy="10" r="7" stroke="#4d4d4d" stroke-width="2"></circle><path stroke="#4d4d4d" stroke-width="2" d="M17 17l4 4"></path></g></svg>
-													<input type="text" class="form-control" id="text1" placeholder="Nach Treatments suchen">
-												</div>
-											</div>
-											<div class="form-group mb-3">
-												<div class="custom_field">
-													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path stroke="#4d4d4d" stroke-width="2" d="M12 21c1.5 0 7-7 7-11s-3-7-7-7-7 3-7 7 5.5 11 7 11z"></path><circle cx="12" cy="10" r="2" fill="#4d4d4d"></circle></g></svg>
-													<input type="text" class="form-control" id="text2" placeholder="Postleitzahl oder Gebiet eingeben">
-												</div>
-											</div>
-											<div class="form-group mb-3">
-												<div class="custom_field">
-													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path stroke="#666" stroke-width="2" d="M11 5h5m3 0c.552 0 1 .445 1 1v14c0 .552-.445 1-1 1H5c-.552 0-1-.445-1-1V6a1 1 0 0 1 1.01-1H8"></path><path fill="#666" d="M7 12h2v2H7zM11 12h2v2h-2zM11 16h2v2h-2zM15 12h2v2h-2zM7 16h2v2H7zM7 2h2v6H7zM15 2h2v6h-2z"></path></g></svg>
-													<input type="text" class="form-control" id="text3" placeholder="Beliebiges Datum">
-												</div>
-											</div>
-											<button class="btn btn-danger btn-block mt-auto">Auf Treatwell finden</button>
-										</div>
-									</form>
-								</div>
-								<div class="tab-pane fade" id="salonname" role="tabpanel" aria-labelledby="salonname-tab">
-									<form action="#">
-										<div class="d-flex flex-column input_height">
-											<div class="form-group mb-3">
-												<div class="custom_field">
-													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><circle cx="10" cy="10" r="7" stroke="#4d4d4d" stroke-width="2"></circle><path stroke="#4d4d4d" stroke-width="2" d="M17 17l4 4"></path></g></svg>
-													<input type="text" class="form-control" id="text11" placeholder="Nach Treatments suchen">
-												</div>
-											</div>
-											<button class="btn btn-danger btn-block mt-auto">Auf Treatwell finden</button>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="recommended_section">
-				<div class="center_block">
-					<h2>Empfohlene Angebote</h2>
-					<div class="recommended_block">
-						<ul class="recommended_list list-unstyled mb-0 d-flex">
-							<li class="recommended_item">
-								<a href="#">
-									<div class="img_prev">
-										<img src="https://picsum.photos/600/600" alt="">
-									</div>
-									<span class="border_prev" style="background-color: #ff808b;"></span>
-									<div class="p-3">
-										<h3>Coiffeure Lounge</h3>
-										<div class="rait_list text-warning d-flex align-items-center minw_0">
-											<strong>4.8</strong>
-											<ul class="list-unstyled mb-0 d-flex align-items-center minw_0">
-												<li><i class="ico ico_star"></i></li>
-												<li><i class="ico ico_star"></i></li>
-												<li><i class="ico ico_star"></i></li>
-												<li><i class="ico ico_star"></i></li>
-												<li><i class="ico ico_star"></i></li>
-											</ul>
-										</div>
-										<div class="location text-truncate">Oerlikon, Zürich Oerlikon, Zürich Oerlikon, Zürich</div>
-									</div>
-								</a>
-							</li>
-							<li class="recommended_item">
-								<a href="#">
-									<div class="img_prev">
-										<img src="https://picsum.photos/600/600" alt="">
-									</div>
-									<span class="border_prev" style="background-color: #ffb500;"></span>
-									<div class="p-3">
-										<h3>Coiffeure Lounge</h3>
-										<div class="rait_list text-warning d-flex align-items-center minw_0">
-											<strong>4.8</strong>
-											<ul class="list-unstyled mb-0 d-flex align-items-center minw_0">
-												<li><i class="ico ico_star"></i></li>
-												<li><i class="ico ico_star"></i></li>
-												<li><i class="ico ico_star"></i></li>
-												<li><i class="ico ico_star_half"></i></li>
-												<li><i class="ico ico_star_half"></i></li>
-											</ul>
-										</div>
-										<div class="location text-truncate">Oerlikon, Zürich Oerlikon, Zürich Oerlikon, Zürich</div>
-										<div class="d-flex align-items-center sale">
-											<span><svg height="16" width="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet" fill="#00a5ad"><path d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 2a6 6 0 100 12A6 6 0 008 2zm1.686 1.919l1.628 1.162-5 7-1.628-1.162 5-7zM10.5 9a1.5 1.5 0 11-.001 3.001A1.5 1.5 0 0110.5 9zm-5-5a1.5 1.5 0 11-.001 3.001A1.5 1.5 0 015.5 4z" fill-rule="evenodd"></path></svg></span>
-											<strong>Last Minute und Nebenzeiten</strong>
-										</div>
-									</div>
-								</a>
-							</li>
-							<li class="recommended_item">
-								<a href="#">
-									<div class="img_prev">
-										<img src="https://picsum.photos/600/600" alt="">
-									</div>
-									<span class="border_prev" style="background-color: #78d64b;"></span>
-									<div class="p-3">
-										<h3>Coiffeure Lounge</h3>
-										<div class="rait_list text-warning d-flex align-items-center minw_0">
-											<strong>4.8</strong>
-											<ul class="list-unstyled mb-0 d-flex align-items-center minw_0">
-												<li><i class="ico ico_star"></i></li>
-												<li><i class="ico ico_star"></i></li>
-												<li><i class="ico ico_star"></i></li>
-												<li><i class="ico ico_star"></i></li>
-												<li><i class="ico ico_star"></i></li>
-											</ul>
-										</div>
-										<div class="location text-truncate">Oerlikon, Zürich Oerlikon, Zürich Oerlikon, Zürich</div>
-									</div>
-								</a>
-							</li>
-							<li class="recommended_item">
-								<a href="#">
-									<div class="img_prev">
-										<img src="https://picsum.photos/600/600" alt="">
-									</div>
-									<span class="border_prev" style="background-color: #00a5ad;"></span>
-									<div class="p-3">
-										<h3>Coiffeure Lounge</h3>
-										<div class="rait_list text-warning d-flex align-items-center minw_0">
-											<strong>4.8</strong>
-											<ul class="list-unstyled mb-0 d-flex align-items-center minw_0">
-												<li><i class="ico ico_star"></i></li>
-												<li><i class="ico ico_star"></i></li>
-												<li><i class="ico ico_star"></i></li>
-												<li><i class="ico ico_star"></i></li>
-												<li><i class="ico ico_star"></i></li>
-											</ul>
-										</div>
-										<div class="location text-truncate">Oerlikon, Zürich Oerlikon, Zürich Oerlikon, Zürich</div>
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="proposition_block pb-4 pb-md-5">
-				<div class="center_block">
-					<h2 class="text-center">Einfach schöner buchen</h2>
-					<div class="mx-n3 mx-sm-0">
-						<div class="proposition_gal owl-carousel owl-theme proposition_gal_js">
-							<div class="proposition_item">
-								<div class="img_prev">
-									<img src="images/img.svg" alt="">
-								</div>
-								<h3>Smarte Angebote</h3>
-								<p>Buche Last Minute oder zu Nebenzeiten</p>
-							</div>
-							<div class="proposition_item">
-								<div class="img_prev">
-									<img src="images/img2.svg" alt="">
-								</div>
-								<h3>Buche 24/7</h3>
-								<p>Einfach vom Bett oder aus dem Bus</p>
-							</div>
-							<div class="proposition_item">
-								<div class="img_prev">
-									<img src="images/img3.svg" alt="">
-								</div>
-								<h3>Grosse Auswahl an top-bewerteten Salons</h3>
-								<p>Tausende neue Salons (und Bewertungen)</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="center_block">
-				<div class="row">
-					<div class="col-12 col-sm-6 post_item pb-4">
-						<a href="#" class="d-flex flex-column h-100">
-							<div class="post_prev ">
-								<img src="images/img.jpg" alt="" class="img-fluid">
-							</div>
-							<div class="post_cont p-3 d-flex flex-column justify-content-between h-100">
-								<div class="post_cont_txt">
-									<h2>Unser Geschenkgutschein</h2>
-									<p>Immer das passende Geschenk, gerade jetzt! Ein versprechen für die Zukunft auf etwas Me-Time.</p>
-								</div>
-								<div class="post_cont_btn">
-									<span class="btn btn-secondary btn-lg font-weight-bold">Mehr erfahren</span>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-12 col-sm-6 post_item pb-4">
-						<a href="#" class="d-flex flex-column h-100">
-							<div class="post_prev ">
-								<img src="images/img2.jpg" alt="" class="img-fluid">
-							</div>
-							<div class="post_cont p-3 d-flex flex-column justify-content-between  h-100">
-								<div class="post_cont_txt">
-									<h2>Unser Geschenkgutschein</h2>
-									<p>Immer das passende Geschenk, gerade jetzt! Ein versprechen für die Zukunft auf etwas Me-Time. Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Enim accusamus veniam porro, natus eius dolores optio ullam! Voluptates eius, fugit inventore aliquam at ad iste, atque rerum unde expedita dolor. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis impedit nam odio, adipisci tempora magni, quo aliquam laudantium dolorum delectus illum iusto sint quisquam voluptatum animi alias, quam consequatur provident.</p>
-								</div>
-								<div class="post_cont_btn">
-									<span class="btn btn-secondary btn-lg font-weight-bold">Mehr erfahren</span>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-			<a href="#" class="banner_block mt-2 d-block">
-				<div class="banner_inner">
-					<div class="center_block position-relative">
-						<div class="banner_info text-white">
-							<h2>Sie besitzen einen Coiffeur- oder Beauty-Salon? Gehen Sie online. </h2>
-							<p>Wir helfen Ihnen Ihr Geschäft (und Kundenstamm) weiter auszubauen mit Treawell Connect - unsere einfach zu bedienende Salonsoftware. </p>
-							<span class="btn text-secondary font-weight-bold bg-white btn-lg">Partner werden</span>
-						</div>
-						<img class="banner_img" src="images/desktop.png" srcset="images/desktop.png 1x, images/desktop_x2.png 2x">
-					</div>
-				</div>
-			</a>
-			<div class="kreise_block">
-				<div class="center_block">
-					<h3>Beliebteste Kreise</h3>
-					<div class="row">
-						<div class="col-4 col-md-3">
-							<h4><a href="#">Kreis 1, Zürich</a></h4>
-						</div>
-						<div class="col-4 col-md-3">
-							<h4><a href="#">Kreis 4, Zürich</a></h4>
-						</div>
-						<div class="col-4 col-md-3">
-							<h4><a href="#">Kreis 11, Zürich</a></h4>
-						</div>
-						<div class="col-4 col-md-3">
-							<h4><a href="#">Kreis 5, Zürich</a></h4>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer">
-				<div class="center_block text-white">
-					<div class="footer_top">
-						<div class="row">
-							<div class="col-6 col-lg-3">
-								<h3>Kontakt</h3>
-								<ul class="list-unstyled m-0">
-									<li><a href="#">Kunden-Hilfe</a></li>
-									<li><a href="#">Hilfe / Kontakt</a></li>
-								</ul>
-							</div>
-							<div class="col-6 col-lg-3">
-								<h3>Entdecke</h3>
-								<ul class="list-unstyled m-0">
-									<li><a href="#">Treatment Guide</a></li>
-									<li><a href="#">Unser Blog</a></li>
-									<li><a href="#">Treatwell Geschenkgutschein</a></li>
-									<li><a href="#">Newsletter Anmeldung</a></li>
-									<li><a href="#">Salon empfehlen</a></li>
-								</ul>
-							</div>
-							<div class="col-6 col-lg-3">
-								<h3>Geschäftspartner</h3>
-								<ul class="list-unstyled m-0">
-									<li><a href="#">Ihr Geschäft registrieren</a></li>
-									<li><a href="#">Partner Help Centre</a></li>
-								</ul>
-							</div>
-							<div class="col-6 col-lg-3">
-								<h3>Unternehmen</h3>
-								<ul class="list-unstyled m-0">
-									<li><a href="#">Über uns</a></li>
-									<li><a href="#">Jobs</a></li>
-									<li><a href="#">Impressum</a></li>
-									<li><a href="#">Cookie-Einstellungen</a></li>
-									<li><a href="#">Rechtliches</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="footer_bottom">
-						<ul class="list-unstyled mb-0 d-none d-lg-flex align-items-center">
-							<li><a href="#"><i class="ico ico_f"></i></a></li>
-							<li><a href="#"><i class="ico ico_inst"></i></a></li>
-						</ul>
-						<span class="copy">© 2020 Treatwell DACH GmbH</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Modal -->
-		<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered modal_dialog_cstm">
-				<div class="modal-content">
-					<div class="modal-body">
-						<strong class="logo_modal">
-							<svg class="Logo-module--medium--3cfc65" viewBox="0 0 185 35"><g><path d="M178.812739,1 L172.954238,1.6964651 L172.954238,32.7506146 L178.812739,32.7506146 L178.812739,1 Z M167.710266,1 L161.851765,1.6964651 L161.851765,32.7506146 L167.710266,32.7506146 L167.710266,1 Z M101.750925,29.5960374 C99.0060327,29.5960374 97.3672913,27.7934219 97.3672913,24.8027188 L97.3672913,6.53075223 L96.8756688,6.53075223 L88.0264653,14.6015536 L88.0264653,15.0522075 L91.5087908,15.0522075 L91.5087908,26.5233973 C91.5087908,30.866062 94.1717455,33.1603 97.8179452,33.1603 C100.644774,33.1603 102.857075,31.8083383 104.372911,29.3911948 L104.372911,29.104415 C103.430634,29.4321633 102.611264,29.5960374 101.750925,29.5960374 L101.750925,29.5960374 Z M17.7244592,29.5960374 C15.0205359,29.5960374 13.3817945,27.7934219 13.3817945,24.8027188 L13.3817945,6.53075223 L12.8901721,6.53075223 L4,14.6015536 L4,15.0522075 L7.52329401,15.0522075 L7.52329401,26.5233973 C7.52329401,30.866062 10.1862488,33.1603 13.8324484,33.1603 C16.6183088,33.1603 18.8306097,31.8083383 20.387414,29.3911948 L20.387414,29.104415 C19.4451377,29.4321633 18.5847985,29.5960374 17.7244592,29.5960374 L17.7244592,29.5960374 Z M78.1530484,12.5531269 L78.1530484,32.7506146 L84.0115489,32.7506146 L84.0115489,11.8976303 L78.1530484,12.5531269 Z M30.2608309,11.8976303 L24.4023304,12.5531269 L24.4023304,32.7506146 L30.2608309,32.7506146 L30.2608309,11.8976303 Z M146.529533,23.819474 C147.307935,24.0652852 148.29118,24.2291593 149.274425,24.2291593 C153.780964,24.2291593 157.550069,21.1974878 157.550069,17.5922567 C157.550069,14.4376795 154.559366,11.9385988 150.216701,11.8976303 L150.216701,12.1844101 C151.609632,12.9218437 151.93738,14.6834907 151.93738,16.240295 C151.93738,20.2552115 149.438299,23.286883 146.529533,23.5326943 L146.529533,23.819474 Z M48.2050493,23.819474 C48.9834514,24.0652852 49.9257277,24.2291593 50.9499411,24.2291593 C55.45648,24.2291593 59.1846166,21.1974878 59.1846166,17.5922567 C59.1846166,14.4376795 56.1939136,11.9385988 51.8512489,11.8976303 L51.8512489,12.1844101 C53.2441791,12.9218437 53.5719274,14.6834907 53.5719274,16.240295 C53.5719274,20.2552115 51.0728467,23.286883 48.2050493,23.5326943 L48.2050493,23.819474 Z M149.069582,11.8976303 C143.047208,11.8976303 138.581637,16.4451377 138.581637,22.672355 C138.581637,28.8995723 142.842365,33.1603 148.782803,33.1603 C152.756751,33.1603 155.993265,31.1528418 157.591038,27.5885792 L157.591038,27.2198624 C156.361982,28.3260128 154.313555,28.8995723 152.265128,28.8995723 C147.594715,28.8995723 144.685949,25.9498378 144.685949,20.9926451 C144.685949,17.3464455 146.283722,13.4954032 149.069582,12.1844101 L149.069582,11.8976303 Z M50.7450984,11.8976303 C44.7227238,11.8976303 40.2161849,16.4451377 40.2161849,22.672355 C40.2161849,28.8995723 44.4769126,33.1603 50.4173502,33.1603 C54.4322666,33.1603 57.6687809,31.1528418 59.2255852,27.5885792 L59.2255852,27.2198624 C57.9965291,28.3260128 55.9481024,28.8995723 53.8996756,28.8995723 C49.2702312,28.8995723 46.3204967,25.9088693 46.3204967,20.9926451 C46.3204967,17.3464455 47.9592381,13.4954032 50.7450984,12.1844101 L50.7450984,11.8976303 Z M62.9537219,23.286883 C62.9537219,28.9405409 66.1902361,33.1603 70.9425862,33.1603 C73.7284466,33.1603 75.8178419,31.48059 77.128835,28.8995723 L77.128835,28.6537611 C76.4323699,29.0224779 75.5720306,29.2682892 74.6707229,29.2682892 C71.4751771,29.2273206 69.1399707,26.4414602 69.1399707,22.1807326 C69.1399707,16.6090118 72.5403591,12.8399066 77.0059294,12.8399066 L77.0059294,12.5121583 C76.0636531,12.102473 74.834597,11.8976303 73.5645724,11.8976303 C67.5421978,11.8976303 62.9537219,16.6909489 62.9537219,23.286883 L62.9537219,23.286883 Z M98.80119,15.0522075 L104.495816,15.0522075 L104.495816,12.3073157 L98.80119,12.3073157 L98.80119,15.0522075 Z M14.8156932,15.0522075 L20.5103196,15.0522075 L20.5103196,12.3073157 L14.8156932,12.3073157 L14.8156932,15.0522075 Z M125.225895,12.3073157 L118.916741,12.3073157 L127.397227,33.0373944 L127.806913,33.0373944 L130.96149,26.4414602 L125.225895,12.3073157 Z M113.795674,12.3073157 L107.486519,12.3073157 L115.967006,33.0373944 L116.376692,33.0373944 L119.531269,26.4414602 L113.795674,12.3073157 Z M131.043427,12.3073157 C132.06764,14.3147739 133.009917,18.2477532 133.009917,20.2142429 L133.296696,20.2142429 L137.311613,12.3073157 L131.043427,12.3073157 Z M31.1621387,17.920005 L31.1621387,18.1248476 C32.4321633,16.8138545 34.2347788,16.4451377 35.9964258,16.4451377 C37.1435448,16.4451377 37.7990414,16.6090118 38.3316323,16.854823 L38.3316323,12.102473 C38.0038841,11.9795674 37.5122616,11.8976303 36.8977336,11.8976303 C33.6612193,11.8976303 31.8586038,14.1099312 31.1621387,17.920005 L31.1621387,17.920005 Z" class="Logo-module--medium--3cfc65" fill="#FF5C39"></path></g></svg>
-						</strong>
-						<p>We gebruiken cookies om inhoud en advertenties te personaliseren, sociale mediafuncties aan te bieden en ons verkeer te analyseren. We delen ook informatie over uw gebruik van onze site met onze partners voor sociale media, reclame en analytics. <a href="#" target="_blank">Cookie Policy</a></p>
-						<div class="row modal_footer_btn">
-							<div class="col-12 col-sm-6 pb-3 pb-sm-0">
-								<button type="button" class="btn btn-lg btn-outline-secondary font-weight-bold fz_14">Cookie-instellingen</button>
-							</div>
-							<div class="col-12 col-sm-6">
-								<button type="button" class="btn  btn-lg btn-secondary font-weight-bold fz_14"  data-dismiss="modal">
-									<i class="ico ico_check"></i>
-									Cookies accepteren
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/main.js"></script>
-		<script>
-			// $('#staticBackdrop').modal('show');
-		</script>
-	</body>
+<body>
+	<div id="flex">
+		<a target="_blank"  href="home.html" class="">home</a>
+		<a target="_blank"  href="inner.html" class="">inner</a>
+	</div>
+</body>
 </html>
