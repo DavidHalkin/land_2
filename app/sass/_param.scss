@@ -104,3 +104,15 @@ body{
 		}
 	}
 }
+.tooltip_custom{
+	.arrow{
+		&:before{
+			border-bottom-color: theme-color("secondary");
+		}
+	}
+	.tooltip-inner{
+		background: theme-color("secondary");
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
