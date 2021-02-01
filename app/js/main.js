@@ -25,6 +25,26 @@ $(document).ready(function(){
     $(this).toggleClass("active");
     $(this).parent().find(".more_info_content").slideToggle("fast");
   });
+  // show hide inputs  on search bar
+  $(".total_search_js").click(function(){
+    $(this).parent().toggleClass("opened");
+    $(this).slideToggle("fast");
+    $(this).parent().find(".total_search_inputs").slideToggle("fast");
+  });
+//   $(window).scroll(function(){
+//     // $(".total_search_block.opened .total_search_js").slideToggle("fast");
+//     // $(".total_search_block.opened .total_search_inputs").slideToggle("fast");
+//     //  if ($(".total_search_block").hasClass('opened')) {
+//     //     alert("d");
+//     //     $(".total_search_block .total_search_js").slideToggle("fast");
+//     //     $(".total_search_block .total_search_inputs").slideToggle("fast");
+//     // }
+//     // else {
+        
+//     // }
+// });
+
+
   // tooltip
     var tooltipTemplate = ['<div class="tooltip tooltip_custom" role="tooltip">',
       '<div class="arrow"></div>',

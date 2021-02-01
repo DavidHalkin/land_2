@@ -39,23 +39,45 @@
 			<div class="slide_bar py-3">
 				<div class="center_block">
 					<div class="d-flex align-items-center justify-content-between">
-						<div class="total_search d-flex align-items-center">
-							<div class="total_search_ico mr-2">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><circle cx="10" cy="10" r="7" stroke="#4d4d4d" stroke-width="2"></circle><path stroke="#4d4d4d" stroke-width="2" d="M17 17l4 4"></path></g></svg>
+						<div class="total_search_block mr-md-3">
+							<div class="total_search align-items-center total_search_js">
+								<div class="total_search_ico mr-2">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><circle cx="10" cy="10" r="7" stroke="#4d4d4d" stroke-width="2"></circle><path stroke="#4d4d4d" stroke-width="2" d="M17 17l4 4"></path></g></svg>
+								</div>
+								<div class="total_search_info">
+									<strong class="tsi_title d-block text-truncate">Schulter-, Rücken- & Nackenmassage Lorem ipsum, dolor sit amet</strong>
+									<div class="d-inline-flex tsi_info">
+										<div class="tsi_place text-truncate">in Schweizin Lorem ipsum dolor sit, amet,</div>
+										<div class="tsi_dot">・</div>
+										<div class="tsi_time text-nowrap">05.02 08:00 – 20:00 </div>
+									</div>
+								</div>
 							</div>
-							<div class="total_search_info">
-								<strong class="tsi_title d-block text-truncate">Schulter-, Rücken- & Nackenmassage Lorem ipsum, dolor sit amet</strong>
-								<div class="d-inline-flex tsi_info">
-									<div class="tsi_place text-truncate">in Schweizin Lorem ipsum dolor sit, amet,</div>
-									<div class="tsi_dot">・</div>
-									<div class="tsi_time text-nowrap">05.02 08:00 – 20:00 </div>
+							<div class="total_search_inputs" style="display: none;">
+								<div class="form-group">
+									<div class="custom_field">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><circle cx="10" cy="10" r="7" stroke="#4d4d4d" stroke-width="2"></circle><path stroke="#4d4d4d" stroke-width="2" d="M17 17l4 4"></path></g></svg>
+										<input type="text" class="form-control" id="text1" placeholder="Nach Treatments suchen">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="custom_field">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path stroke="#4d4d4d" stroke-width="2" d="M12 21c1.5 0 7-7 7-11s-3-7-7-7-7 3-7 7 5.5 11 7 11z"></path><circle cx="12" cy="10" r="2" fill="#4d4d4d"></circle></g></svg>
+										<input type="text" class="form-control" id="text2" placeholder="Postleitzahl oder Gebiet eingeben">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="custom_field">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path stroke="#666" stroke-width="2" d="M11 5h5m3 0c.552 0 1 .445 1 1v14c0 .552-.445 1-1 1H5c-.552 0-1-.445-1-1V6a1 1 0 0 1 1.01-1H8"></path><path fill="#666" d="M7 12h2v2H7zM11 12h2v2h-2zM11 16h2v2h-2zM15 12h2v2h-2zM7 16h2v2H7zM7 2h2v6H7zM15 2h2v6h-2z"></path></g></svg>
+										<input type="text" class="form-control" id="text3" placeholder="Beliebiges Datum">
+									</div>
 								</div>
 							</div>
 						</div>
-						<h3 class="mb-0 col d-none d-lg-block">Schulter-, Rücken- & Nackenmassage</h3>
-						<button class="btn border-white text-white bdw_2 btn_switch_map">
+						<h3 class="mb-0 col d-none d-md-block">Schulter-, Rücken- & Nackenmassage</h3>
+						<!-- <button class="btn border-white text-white bdw_2 btn_switch_map">
 							<span>Karte verbergen</span>
-						</button>
+						</button> -->
 					</div>
 				</div>
 			</div>
@@ -65,12 +87,12 @@
 						<div class="col">
 							<strong class="name_result">119 Salons, die Schulter-, Rücken- & Nackenmassage in Schweiz anbieten</strong>
 						</div>
-						<div class="col-auto">
+						<!-- <div class="col-auto">
 							<a href="#" class="btn btn-outline-secondary bdw_2 btn_filter active">
 								<i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 17v-1.01c0-.546.444-.99 1-.99a1 1 0 0 1 1 .99v4.02c0 .546-.444.99-1 .99a1 1 0 0 1-1-.99V19H2v-2h8zm5-6V9.99c0-.546.444-.99 1-.99a1 1 0 0 1 1 .99v4.02c0 .546-.444.99-1 .99a1 1 0 0 1-1-.99V13H2v-2h13zM5 5V3.99C5 3.445 5.444 3 6 3a1 1 0 0 1 1 .99v4.02C7 8.555 6.556 9 6 9a1 1 0 0 1-1-.99V7H2V5h3zm4 0h13v2H9V5zm10 6h3v2h-3v-2zm-5 6h8v2h-8v-2z"></path></svg></i>
 								<span><span class="d-none d-sm-inline">Filtern und Sortieren</span> • 1</span>
 							</a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<div class="result_block">
@@ -109,7 +131,7 @@
 											</div>
 											<div class="d-flex flex-wrap align-items-center">
 												<p class="mb-0 pr-4">Kloten</p>
-												<a href="#" class="link_map d-inline-flex d-lg-none align-items-center text-secondary"><i></i>Auf Karte anzeigen</a>
+												<!-- <a href="#" class="link_map d-inline-flex d-lg-none align-items-center text-secondary"><i></i>Auf Karte anzeigen</a> -->
 											</div>
 										</div>
 									</div>
@@ -220,7 +242,7 @@
 											</div>
 											<div class="d-flex flex-wrap align-items-center">
 												<p class="mb-0 pr-4">Kloten</p>
-												<a href="#" class="link_map d-inline-flex d-lg-none align-items-center text-secondary"><i></i>Auf Karte anzeigen</a>
+												<!-- <a href="#" class="link_map d-inline-flex d-lg-none align-items-center text-secondary"><i></i>Auf Karte anzeigen</a> -->
 											</div>
 										</div>
 									</div>
@@ -335,8 +357,10 @@
 								</nav>
 							</div>	
 						</div>
-						<div class="col-12 col-lg-6">
-							map
+						<div class="col-12 col-lg-6 d-none d-lg-block">
+							<div class="map_holder" id="map" style="height: 400px;">
+
+							</div>
 						</div>
 					</div>
 				</div>
@@ -422,5 +446,38 @@
 		<script>
 			// $('#staticBackdrop').modal('show');
 		</script>
+		<script>
+			var map;
+			function initMap() {
+				// The location of Vital & Beauty
+				var coords = {lat: 47.367675, lng: 8.552143};
+				map = new google.maps.Map(document.getElementById('map'), {
+					center: coords,
+					zoom: 15,
+					mapTypeId: 'roadmap',
+					scrollwheel: false,
+					gestureHandling: 'cooperative'
+				});
+				var contentString =
+					'<div id="content">' +
+					'<div id="siteNotice">' +
+					"</div>" +
+					'<img src="images/logo.png" loading="lazy" alt="" style="max-width:150px; padding:10px 0;">' +
+					'<div id="bodyContent">' +
+					'<p style="text-align:center; font-size:17px; line-height:20px;">Zeltweg 50 <br> 8032, Zürich <p>' +
+					"</div>" +
+					"</div>";
+				var infowindow = new google.maps.InfoWindow({
+					content: contentString
+				});
+				var marker = new google.maps.Marker({position: coords, map: map, title: "Vital & Beauty"});
+				infowindow.open(map, marker);
+				marker.addListener("click", () => {
+					infowindow.open(map, marker);
+				});
+			}
+		</script>
+	    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwKVVOMs40Pn2o3bQ_tRrZQtPvl79YBZ8&callback=initMap"
+	    async defer></script>
 	</body>
 </html>
