@@ -56,6 +56,27 @@ $(document).ready(function(){
       template: tooltipTemplate
     });
 
+
+// main gal
+$('.main_gal_js').owlCarousel({
+    loop:true,
+    nav:true,
+    margin:2,
+    dots:false,
+    navText:["<svg width='24' height='24' viewBox='0 0 24 24'  xmlns='http://www.w3.org/2000/svg'><g fill='none'><path style='stroke: rgb(255, 255, 255);' stroke-width='2' d='M5 8l7 7 7-7'></path></g></svg>","<svg width='24' height='24' viewBox='0 0 24 24'  xmlns='http://www.w3.org/2000/svg'><g fill='none'><path style='stroke: rgb(255, 255, 255);' stroke-width='2' d='M5 8l7 7 7-7'></path></g></svg>"],
+    responsive:{
+        0:{
+            items:1,
+            nav:false,
+            dots:true,
+            margin:0
+        },
+        577:{
+            items:2
+        }
+    }
+})
+// mini gal
   $('.mini_gal_js').owlCarousel({
     items:1,
     nav:true,

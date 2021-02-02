@@ -17,6 +17,11 @@ body{
 		padding-right: 16px;
 	}
 }
+a.underline_none{
+	&:hover{
+		text-decoration: none;
+	}
+}
 .minw_0{
 	min-width: 0;
 }
