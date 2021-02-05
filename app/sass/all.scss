@@ -939,6 +939,14 @@
 					color: #4d4d4d;
 				}
 			}
+			@include media-breakpoint-down(sm) {
+				font-size: 14px;
+				line-height: 24px;
+				&:before{
+					font-size: 12px;
+					line-height: 24px;
+				}
+			}
 		}
 	}
 }
@@ -1393,5 +1401,146 @@
 	}
 	@include media-breakpoint-down(xs)  {
 		padding-top: 16px;
+	}
+}
+.brands_etc{
+	span{
+		max-width: 88px;
+		flex:0 0 88px;
+		height: 88px;
+		@include media-breakpoint-down(xs) {
+			max-width: 72px;
+			flex:0 0 72px;
+			height: 72px;
+		}
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.studio_etc{
+	padding-top: 32px;
+	h2{
+		// padding-top: 20px;
+		margin-bottom: 16px;
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: bold;
+		@include media-breakpoint-down(xs) {
+			border-bottom: 1px solid #e0e0e0;
+			padding-bottom: 25px;
+			padding-top: 12px;
+		}
+	}
+}
+.studio_etc_item{
+	a{
+		display: block;
+		&:hover{
+			text-decoration: none;
+			h4{
+				color: #000;
+			}
+		}
+	}
+	.img_prev{
+		width: 100%;
+		padding-top: 63%;
+		position: relative;
+		overflow: hidden;
+		img{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			top: 0;
+			left: 0;
+		}
+	}
+	h4{
+		font-size: 16px;
+		line-height: 24px;
+		color: #4d4d4d;
+		margin: 8px 0 4px 0;
+		@include media-breakpoint-down(sm) {
+			font-size: 14px;
+			line-height: 20px;
+		}
+		@include media-breakpoint-down(xs) {
+			margin-top: 0;
+		}
+	}
+	.distance_info{
+		font-size: 14px;
+		line-height: 24px;
+		color: #b3b3b3;
+	}
+	.rating_sum{
+		font-size: 14px;
+		line-height: 1;
+		color: #b3b3b3;
+		font-weight: normal;
+	}
+	ul{
+		li{
+			max-width: 14px;
+			flex: 0 0 14px;
+			.ico{
+				width: 14px;
+				height: 13px;
+				background-size: 14px 13px;
+			}
+			
+		}
+	}
+}
+.section_services{
+	h2{
+		font-size: 18px;
+		line-height: 24px;
+		color: rgb(77, 77, 77);
+		font-weight: bold;
+		margin: 0;
+		padding-top: 12px;
+	}
+	p{
+		font-size: 16px;
+		line-height: 24px;
+		color: rgb(77, 77, 77);
+	}
+}
+.services_item{
+	border-top: 1px solid #e8e8e8;
+	padding: 12px 0;
+	&:first-of-type{
+		border-top: 0;
+	}
+}
+.btn_sm{
+	border-width: 2px;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 3px 12px;
+}
+.services_item_info{
+	@include media-breakpoint-up(md) {
+		max-width: 300px;
+		background: #000;
+	}
+	.cost_info{
+		strong{
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: bold;
+			padding-bottom: 3px;
+			@include media-breakpoint-up(sm) {
+				margin-top: -2px;
+			}
+		}
+		span{
+			font-size: 16px;
+			line-height: 24px;
+		}
 	}
 }

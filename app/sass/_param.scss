@@ -22,6 +22,9 @@ a.underline_none{
 		text-decoration: none;
 	}
 }
+.fz_16{
+	font-size: 16px !important;
+}
 .minw_0{
 	min-width: 0;
 }
@@ -125,5 +128,24 @@ a.underline_none{
 		background: theme-color("secondary");
 		font-size: 14px;
 		line-height: 18px;
+	}
+}
+.breadcrumb_custom{
+	.breadcrumb-item{
+		padding-left: 0;
+		padding-right: $breadcrumb-item-padding;
+		&::before {
+			float: right; // Suppress inline spacings and underlining of the separator
+			padding-right: 0;
+			padding-left: $breadcrumb-item-padding;
+			color: $breadcrumb-divider-color;
+			content: escape-svg($breadcrumb-divider);
+		}
+		&:last-of-type{
+			padding-left: 0;
+			&:before{
+				content: none;
+			}
+		}
 	}
 }
