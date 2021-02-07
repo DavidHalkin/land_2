@@ -231,6 +231,7 @@
 		width: 16px;
 		height: 15px;
 		display: inline-block;
+		background-size: 16px 15px;
 	}
 }
 .proposition_block{
@@ -1503,6 +1504,10 @@
 		font-weight: bold;
 		margin: 0;
 		padding-top: 12px;
+		@include media-breakpoint-down(xs) {
+			padding-top: 4px;
+			margin-bottom: 12px;
+		}
 	}
 	p{
 		font-size: 16px;
@@ -1516,6 +1521,9 @@
 	&:first-of-type{
 		border-top: 0;
 	}
+	.services_item_time{
+		color: rgb(112, 112, 112);
+	}
 }
 .btn_sm{
 	border-width: 2px;
@@ -1526,7 +1534,6 @@
 .services_item_info{
 	@include media-breakpoint-up(md) {
 		max-width: 300px;
-		background: #000;
 	}
 	.cost_info{
 		strong{
@@ -1541,6 +1548,51 @@
 		span{
 			font-size: 16px;
 			line-height: 24px;
+		}
+	}
+}
+.card_bar{
+	max-width: 976px;
+	width: 100%;
+	padding: 8px 8px 0;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform:translateX(-50%);
+	.card_bar_content{
+		background: #fff;
+		border-radius: 4px 4px 0 0;
+		box-shadow: 0 0 3px 0 rgba(0,0,0,.3),0 0 0 1px rgba(0,0,0,.05);
+	}
+	.btn{
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		font-size: 21px;
+		padding: 16px 24px;
+		@include media-breakpoint-down(xs) {
+			padding: 9px 12px;
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+	p{
+		font-size: 21px;
+		line-height: 30px;
+		color: rgb(77, 77, 77);
+		strong{
+			color: #4d4d4d;
+		}
+		@include media-breakpoint-down(xs) {
+			font-size: 12px;
+			line-height: 16px;
+			strong{
+				font-size: 14px;
+			}
+		}
+		&.small{
+			color: #b3b3b3;
+			font-size: 14px;
+			line-height: 16px;
 		}
 	}
 }

@@ -44,9 +44,9 @@
 						<div class="d-flex align-items-center justify-content-between">
 							<h1 class="mb-0 pr-3">Beauty of Swiss</h1>
 							<ul class="list-unstyled mb-0 d-none d-md-flex align-items-center studio_info_menu">
-								<li><a href="#" class="btn btn-secondary">Termin buchen</a></li>
-								<li><a href="#" class="btn text-secondary">Bewertungen</a></li>
-								<li><a href="#" class="btn text-secondary">Saloninfo</a></li>
+								<li><a href="#termin_buchen" class="btn btn-secondary">Termin buchen</a></li>
+								<li><a href="#bewertungen" class="btn text-secondary">Bewertungen</a></li>
+								<li><a href="#saloninfo" class="btn text-secondary">Saloninfo</a></li>
 							</ul>
 						</div>
 						<div class="rait_list text-warning d-flex flex-wrap align-items-center minw_0">
@@ -58,7 +58,7 @@
 								<li><i class="ico ico_star"></i></li>
 								<li><i class="ico ico_star_half"></i></li>
 							</ul>
-							<p class="mb-0 text-nowrap"><a href="#" class="text-secondary font-weight-bold underline_none">5 Bewertungen</a></p>
+							<p class="mb-0 text-nowrap"><a href="#bewertungen" class="text-secondary font-weight-bold underline_none">5 Bewertungen</a></p>
 						</div>
 					</div>
 					<div class="studio_info_gal col-12 pt-0 pt-sm-4 order-first order-sm-last">
@@ -84,7 +84,7 @@
 					<strong class="pl-2 pl-sm-3">Witikonerstrasse 15, Zürich, 8032 </strong>
 				</div>
 				<div class="selector_line mx-n3 mx-sm-0 mt-3 mt-sm-4"></div>
-				<div class="section_services pt-4">
+				<div class="section_services pt-3 pt-sm-4" id="termin_buchen">
 					<div class="row">
 						<div class="col-12 col-sm-4">
 							<h2>Beliebte Services</h2>
@@ -94,13 +94,31 @@
 								<div class="row mx-n2">
 									<div class="col px-2">
 										<p class="mb-0">Damen Waxing - Brazilian komplett</p>
-										<p class="mb-0 pt-1">1 Std. 15 Min. - 1 Std. 30 Min.</p>
+										<p class="mb-0 pt-1 services_item_time">1 Std. 15 Min. - 1 Std. 30 Min.</p>
 									</div>
-									<div class="col-auto text-right px-2 services_item_info">
+									<div class="col col-md-auto text-right px-2 services_item_info">
 										<div class="row mx-n2">
 											<div class="col-12 col-md px-2 cost_info">
 												<strong class="d-block">ab CHF 40</strong>
 												<span class="text-success d-block">Spare bis zu 20%</span>
+											</div>
+											<div class="col-12 col-md-auto px-2 mt-2 mt-md-0">
+												<a href="#" class="btn btn-outline-danger btn_sm toggler_btn">Auswählen</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="services_item">
+								<div class="row mx-n2">
+									<div class="col px-2">
+										<p class="mb-0">Damen Waxing - Brazilian komplett</p>
+										<p class="mb-0 pt-1 services_item_time">1 Std. 15 Min. - 1 Std. 30 Min.</p>
+									</div>
+									<div class="col col-md-auto text-right px-2 services_item_info">
+										<div class="row mx-n2">
+											<div class="col-12 col-md px-2 cost_info">
+												<strong class="d-block">ab CHF 40</strong>
 											</div>
 											<div class="col-12 col-md-auto px-2 mt-2 mt-md-0">
 												<a href="#" class="btn btn-outline-danger btn_sm toggler_btn active">Auswählen</a>
@@ -112,7 +130,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="studio_rating">
+				<div class="studio_rating" id="bewertungen">
 					<h2>Salonbewertungen</h2>
 					<div class="row align-items-center">
 						<div class="col-12 col-sm-4">
@@ -277,7 +295,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="studio_info_main">
+				<div class="studio_info_main" id="saloninfo">
 					<h2>Saloninfo</h2>
 					<div class="mx-n3 mx-sm-0">
 						<div class="row no-gutters map_inf">
@@ -474,6 +492,17 @@
 						</ul>
 						<span class="copy">© 2020 Treatwell DACH GmbH</span>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card_bar">
+			<div class="card_bar_content row flex-nowrap no-gutters align-items-center">
+				<div class="col px-3 px-sm-4 minw_0">
+					<p class="mb-0"><span>1</span> Service <strong class="d-block d-sm-inline">CHF 70</strong></p>
+					<p class="mb-0 small d-none d-sm-block text-truncate">Weitere Services hinzufügen oder fortfahren Weitere Services hinzufügen oder fortfahren</p>
+				</div>
+				<div class="col-auto">
+					<button class="btn btn-danger">Termin buchen</button>
 				</div>
 			</div>
 		</div>
